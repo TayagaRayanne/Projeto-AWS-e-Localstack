@@ -56,7 +56,9 @@ $env:AWS_ACCESS_KEY_ID="?"
 $env:AWS_SECRET_ACCESS_KEY="?"
 $env:AWS_DEFAULT_REGION="us-east-1"
 $env:AWS_DEFAULT_OUTPUT=json
+
 Passo a Passo
+
 1. Iniciar LocalStack
 bash
 Copiar código
@@ -67,6 +69,7 @@ Verifique o status:
 powershell
 Copiar código
 Invoke-RestMethod -Uri "http://localhost:4566/_localstack/health"
+
 2. Criar recursos AWS local
 Bucket S3: notas-fiscais-upload
 
@@ -115,7 +118,7 @@ aws apigateway create-rest-api --name "NotasFiscaisAPI" --endpoint-url=http://lo
 Configure recursos /notas, métodos POST/GET e integração com Lambda.
 Conceda permissão à API para invocar a Lambda e faça o deployment no stage dev.
 
-Testando o fluxo
+3. Testando o fluxo
 Enviar arquivo JSON para S3
 
 bash
@@ -132,9 +135,7 @@ response = requests.post(url, json=data)
 print(response.json())
 Verifique os logs da Lambda e os dados inseridos no DynamoDB.
 
----
-
-Como rodar
+4. Como rodar
 Instale as dependências:
 
 bash
@@ -142,7 +143,7 @@ Copiar código
 pip install -r requirements.txt
 Configure LocalStack e AWS CLI conforme descrito acima.
 
-Teste a Lambda:
+5. Teste a Lambda:
 
 bash
 Copiar código
