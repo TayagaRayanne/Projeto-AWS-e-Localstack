@@ -52,8 +52,8 @@ powershell
 Copiar código
 aws configure
 # Defina credenciais fictícias:
-$env:AWS_ACCESS_KEY_ID="test"
-$env:AWS_SECRET_ACCESS_KEY="test"
+$env:AWS_ACCESS_KEY_ID="?"
+$env:AWS_SECRET_ACCESS_KEY="?"
 $env:AWS_DEFAULT_REGION="us-east-1"
 $env:AWS_DEFAULT_OUTPUT=json
 Passo a Passo
