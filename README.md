@@ -1,8 +1,24 @@
 # Projeto AWS e Localstack
+Criado por: Tayaga Rayanne
+
 Este projeto faz parte de uma atividade do Bootcamp AWS Code Girls da Dio.
 
 Este projeto é um hands-on de AWS Lambda, DynamoDB, S3 e API Gateway usando **LocalStack** como ambiente local de simulação da AWS.  
 O objetivo é criar um fluxo completo: enviar arquivos para um bucket S3, acionar uma Lambda, inserir dados no DynamoDB e disponibilizar via API Gateway.
+
+---
+## Minha experiência durante o desenvolvimento:
+
+Desafios:
+Docker não estava conectando corretamente; tive que rinstalar o docker pois a minha versão não estava mais funcionando e isso me trouxe muitos problemas de conexão.
+Conectar o LocalStack foi difícil, exigiu várias tentativas e ajustes. Muito pelo problema que tive com o docker e com uma incompatibilidade que encontrei no gitbash.
+
+Partes mais fáceis:
+Criar a Lambda, o DynamoDB e a API Gateway funcionou sem grandes problemas.
+O projeto foi muito enriquecedor para entender o fluxo completo de AWS Lambda + S3 + DynamoDB + API Gateway, mesmo simulando localmente.
+
+Registro de Progresso:
+Criei uma pasta prints/ para armazenar imagens do LocalStack, prints do console e do progresso do projeto.
 
 ---
 
@@ -118,22 +134,6 @@ Verifique os logs da Lambda e os dados inseridos no DynamoDB.
 
 ---
 
-## Minha experiência
-Durante o desenvolvimento:
-
-Desafios:
-Docker não estava conectando corretamente; tive que rinstalar o docker pois a minha versão não estava mais funcionando e isso me trouxe muitos problemas de conexão.
-Conectar o LocalStack foi difícil, exigiu várias tentativas e ajustes. Muito pelo problema que tive com o docker e com uma incompatibilidade que encontrei no gitbash.
-
-Partes mais fáceis:
-Criar a Lambda, o DynamoDB e a API Gateway funcionou sem grandes problemas.
-
-O projeto foi muito enriquecedor para entender o fluxo completo de AWS Lambda + S3 + DynamoDB + API Gateway, mesmo simulando localmente.
-
-Registro de Progresso
-Criei uma pasta prints/ para armazenar imagens do LocalStack, prints do console e do progresso do projeto.
-
-
 Como rodar
 Instale as dependências:
 
@@ -151,5 +151,3 @@ Observações
 Projeto pronto para subir no GitHub.
 
 Adapte grava_db.py e teste_lambda.py conforme suas necessidades.
-
-### Criadop por: Tayaga Rayanne
